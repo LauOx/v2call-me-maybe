@@ -1,0 +1,26 @@
+# Personal notes
+planning.md
+diseño.md
+
+# Playground / experiments
+playground/
+moulinette/
+
+# Generated output
+data/output/
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+
+# Virtual environments
+.venv
+venv/
+
+# Type checker / tooling
+.mypy_cache/
+.pytest_cache/
+
+# Compiled files
+*.o
