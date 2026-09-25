@@ -16,3 +16,6 @@ venv/
 
 # Compiled files
 *.o
+
+# Mac files
+.DS_Store

@@ -343,7 +343,11 @@ def decode_output(
             final_param = aux.preserve_literal_string_value(
                 cleaned_param_value, prompt
                 )
-            result_parameters[param] = final_param
+            if type == aux.ParamType.BOOL.name:
+                result_parameters[param] = (
+                    True if final_param == 'true' else False)
+            else:
+                result_parameters[param] = final_param
         # Add param found for context to find next param
         param_initial_context += param_value + ', '
     # Save final dict result
